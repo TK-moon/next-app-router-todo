@@ -1,3 +1,25 @@
+# Next app router todo
+
+## side project
+
+### 목적
+
+- app router DX 파악용 프로젝트
+
+### Stack
+
+- nextjs 15.3.1
+- next-auth
+- CSS Module
+- googleapis
+
+### 개발 방향
+
+- 필수 외 외부 라이브러리 사용 자제
+  - 가능한 next, next-auth, googleapis만 이용
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

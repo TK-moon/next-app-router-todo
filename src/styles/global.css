@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Breakpoints */
+:root {
+  --breakpoint-tablet: 1280px;
+  --breakpoint-fold: 832px;
+  --breakpoint-mobile: 480px;
+}
+
+/* Example media queries */
+@media (max-width: 1280px) {
+  /* Tablet/Desktop small screen */
+}
+
+@media (max-width: 832px) {
+  /* Galaxy Fold unfolded */
+}
+
+@media (max-width: 480px) {
+  /* Mobile small screen */
+}
