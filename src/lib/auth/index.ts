@@ -32,7 +32,7 @@ export const auth_options: AuthOptions = {
       if (account) {
         token.access_token = account.access_token;
         token.refresh_token = account.refresh_token ?? token.refresh_token;
-        token.expires_at = Date.now() + (account.expires_in ?? 3600) * 1000;
+        token.expires_at = Date.now() + (account.expires_in ?? 3600);
       }
 
       const is_expired = Date.now() > (token.expires_at ?? 0);
@@ -76,7 +76,7 @@ async function refreshAccessToken(token: Token): Promise<JWT> {
       expires_at: Date.now() + (credentials.expiry_date ?? 3600) * 1000,
     };
   } catch (error) {
-    console.error("RefreshAccessTokenError", error);
+    console.error("--------------RefreshAccessTokenError", error);
     return {
       ...token,
       error: "RefreshAccessTokenError",

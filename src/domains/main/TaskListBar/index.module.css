@@ -1,0 +1,23 @@
+.container {
+  height: var(--task-list-bar-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #000;
+  column-gap: 10px;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+.list_item {
+  align-self: stretch;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 12px;
+}

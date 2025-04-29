@@ -10,6 +10,7 @@
     "test:type": "tsc --noEmit"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.74.8",
     "clsx": "^2.1.1",
     "googleapis": "^148.0.0",
     "next": "15.3.1",

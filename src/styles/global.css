@@ -5,6 +5,9 @@
   --breakpoint-tablet: 1280px;
   --breakpoint-fold: 832px;
   --breakpoint-mobile: 480px;
+
+  --header-height: 60px;
+  --task-list-bar-height: 50px;
 }
 
 /* Example media queries */
