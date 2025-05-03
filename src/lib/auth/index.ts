@@ -34,12 +34,10 @@ export const auth_options: AuthOptions = {
         token.refresh_token = account.refresh_token ?? token.refresh_token;
         token.expires_at = Date.now() + (account.expires_in ?? 3600);
       }
-
-      const is_expired = Date.now() > (token.expires_at ?? 0);
+      const is_expired = Date.now() < (token.expires_at ?? 0);
       if (!is_expired) {
         return token;
       }
-
       return await refreshAccessToken(token);
     },
     session: async ({ session, token }) => {
